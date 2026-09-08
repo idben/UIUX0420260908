@@ -40,8 +40,16 @@ aside .nav .nav-link.active {
   border-bottom: 3px solid #078af5;
 }
 
+.w30px {
+  width: 30px;
+}
+
 .w100px {
   width: 100px;
+}
+
+.h30px {
+  height: 30px;
 }
 
 .h100px {

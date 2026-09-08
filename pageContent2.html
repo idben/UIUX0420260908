@@ -47,16 +47,29 @@
     </nav>
     
     <header class="bg-dark h700px">
-      <div id="carouselExample" class="carousel slide w-100 h-100">
+      <div id="carouselExample" class="carousel slide w-100 h-100 p-5">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="position-relative active" aria-current="true" aria-label="Slide 1">
+            <img src="https://images.pexels.com/photos/33397171/pexels-photo-33397171.jpeg" class="w30px h30px object-fit-cover position-absolute start-0 top-0" alt="">
+          </button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2" class="position-relative">
+            <img src="https://images.pexels.com/photos/20212347/pexels-photo-20212347.jpeg" class="w30px h30px object-fit-cover position-absolute start-0 top-0" alt="">
+          </button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3" class="position-relative">
+            <img src="https://images.pexels.com/photos/6204267/pexels-photo-6204267.jpeg" class="w30px h30px object-fit-cover position-absolute start-0 top-0" alt="">
+          </button>
+        </div>
+
         <div class="carousel-inner w-100 h-100">
           <div class="carousel-item w-100 h-100 active">
-            <img src="https://images.pexels.com/photos/33397171/pexels-photo-33397171.jpeg" class="w-100 h-100" alt="...">
+            <img src="https://images.pexels.com/photos/33397171/pexels-photo-33397171.jpeg" class="w-100 h-100 object-fit-contain" alt="...">
           </div>
           <div class="carousel-item  w-100 h-100">
-            <img src="https://images.pexels.com/photos/20212347/pexels-photo-20212347.jpeg" class="w-100 h-100" alt="...">
+            <img src="https://images.pexels.com/photos/20212347/pexels-photo-20212347.jpeg" class="w-100 h-100 object-fit-contain" alt="...">
           </div>
           <div class="carousel-item w-100 h-100">
-            <img src="https://images.pexels.com/photos/6204267/pexels-photo-6204267.jpeg" class="w-100 h-100" alt="...">
+            <img src="https://images.pexels.com/photos/6204267/pexels-photo-6204267.jpeg" class="w-100 h-100 object-fit-contain" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
