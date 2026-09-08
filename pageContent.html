@@ -58,12 +58,65 @@
       </div>
     </header>
 
-    <aside class="">123</aside>
+    <aside class="">
+      <div class="container">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#item1">關於</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#item2">所有相片</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#item3">相簿</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#item4">最愛 </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#item5">博覽館</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#item6">群組</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
 
     <main></main>
 
     <footer></footer>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" ></script>
+
+    <script>
+      // 抓網址
+      // console.log(window.location.href);
+      // 抓 hash
+      // console.log(window.location.hash);
+      // 抓 hash，去 # 字號
+      // console.log(window.location.hash.slice(1));
+
+      handleHashChange();
+
+      window.addEventListener("hashchange", handleHashChange);
+      
+      function handleHashChange(){
+        // 傳統寫法
+        // let tag = window.location.hash;
+        // console.log(tag == "");
+        // if(tag == ""){
+        //   tag = "#item1"
+        // }
+        
+        // 看起來比較厲害的寫法
+        // 短路賦值
+        let tag = window.location.hash || "#item1";
+
+        // ? 保護語法
+        document.querySelector(".active")?.classList.remove("active");
+        document.querySelector(`a[href="${tag}"]`)?.classList.add("active");
+      }
+    </script>
   </body>
 </html>
