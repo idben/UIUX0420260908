@@ -40,10 +40,6 @@ aside .nav .nav-link.active {
   border-bottom: 3px solid #078af5;
 }
 
-main {
-  height: 200vh;
-}
-
 .w100px {
   width: 100px;
 }
@@ -54,6 +50,10 @@ main {
 
 .h250px {
   height: 250px;
+}
+
+.h300px {
+  height: 300px;
 }
 
 .t50px {
